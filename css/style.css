@@ -60,7 +60,6 @@ header nav ul li:hover::after{
 }
 .container{
     height: 100vh;
-    position: relative;
     background: linear-gradient(135deg, #0f0f1e 0%, #1f1f3a 100%) ;
     overflow: hidden;
 
@@ -286,32 +285,48 @@ header nav ul li:hover::after{
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding-top: 100px;
+        padding-top: 50px;
     }
     .product-name{
         font-size: 2.5rem;
     }
     .description{
-        font-size: 1rem;
+        font-size: 12px;
     }
     .product-img{
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-self: center;
         width: 100%;
-        height: 40%;
+        height: 60%;
+        gap: 0;
     }
     .product-img img{
-        max-width: 70%;
+        max-width: 60%;
+        max-height: 100%;
     }
     .content{
+        margin-top: -150px;
+        font-size: 12px;
         width: 100%;
-        padding: 20px;
+        padding: 10px;
         align-items: center;
+        max-height: 50px;
+        justify-content: center;
+
     }
     header{
         padding: 20px;
+        justify-content: space-between;
+        padding-right: 0;
     }
     header nav ul{
         gap: 20px;
+        font-size: 10px;
+        
     }
+    
     .arrows{
         width: 100%;
         padding: 0 10px;
@@ -320,5 +335,23 @@ header nav ul li:hover::after{
         width: 40px;
         height: 40px;
     }
-    
+    .logo{
+        font-size: 20px;
+    }
+    .list{
+        display: flex;
+        align-self: center;
+    }
+    .product-name{
+    font-size: 1.5rem;
+    }
+    .product-tag{
+    font-size: 0.5rem; 
+    } 
+    .btn{
+        margin-top: 5px;
+    padding: 6px 16px;
+    font-size: 0.5rem;
+    }
+
 }
